@@ -1,0 +1,22 @@
+:root {
+    --black-color: #1F1F20;
+    --light-black-color: #2C2C2C;
+    --gray-color: #9C98A6;
+    --light-gray-color: #F0F0F7;
+    --blue-color: #2B4C7E;
+    --light-blue-color: #567EBB;
+}
+
+body {
+    background-color: var(--light-gray-color);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.25rem;
+}
+
+p {    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
