@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O projeto Task Ninja é um to do list simples feito com intuito de treinar minhas competências.
-- [Visite o projeto online]()
+- [Visite o projeto online](https://luizfelipegondim.github.io/TaskNinja/)
 
 ## :memo: Licença
 
