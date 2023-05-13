@@ -7,7 +7,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Bruno+Ace&family=Montserrat:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/assets/css/reset.css">
         <link rel="stylesheet" href="/assets/css/style.css">
@@ -15,6 +15,20 @@
         <title>Task Ninja</title>
     </head>
     <body>
-        
+        <header>
+            <div class="container header-container">
+                <span class="header-container__logo">Task Ninja</span>
+                <div class="header-container__darkmode">
+                    <img src="assets/icons/sun.svg" alt="Icone do sol" class="container__icon">
+                    
+                    <label class="header-container__switch">
+                        <input type="checkbox" id="switch-checkbox">
+                        <span class="header-container__slider header-container__round"></span>
+                    </label>
+
+                    <img src="assets/icons/moon.svg" alt="Icone da lua" class="header-container__icon">
+                </div>
+            </div>
+        </header>
     </body>
 </html>
