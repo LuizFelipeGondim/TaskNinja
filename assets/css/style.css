@@ -16,9 +16,23 @@ h1 {
     font-size: 2.25rem;
 }
 
-p {    
+p, span {    
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
+    line-height: 1.3;
+}
+
+button {
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--light-blue-color);
+    cursor: pointer;
+    color: var(--light-gray-color);
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: var(--blue-color);
 }
 
 .container {
@@ -66,6 +80,12 @@ header {
     height: 0;
 }
 
+.header-container__switch input:focus {
+    border-color: inherit; 
+  -webkit-box-shadow: none; 
+  box-shadow: none;
+}
+
 .header-container__slider {
     position: absolute;
     cursor: pointer;
@@ -107,4 +127,105 @@ input:checked + .header-container__slider:before {
 
 .header-container__round:before {
     border-radius: 50%;
+}
+
+/*-------- TASKS --------*/
+
+main {
+    margin-bottom: 80px;
+}
+
+.task-container {
+    padding-top: 3rem;
+}
+
+.task-container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-container__button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.task-container__task-list {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task-container__task {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: .4s;
+}
+
+.task-container__task:hover {
+    box-shadow: 0px 8px 16px rgba(8, 35, 48, 0.2);
+}
+
+.task-container__task-header {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.task-container__input {
+    min-width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.task-container__title {
+    flex-grow: 2;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+.task-container__icon-box {
+    min-width: 46px;
+    transition: .4s;
+}
+
+.task-container__icon-box > img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.task-container__content {
+    margin-top: 16px;
+    margin-left: 44px;
+    color: var(--gray-color);
+}
+
+@media (max-width: 426px) {
+    
+    .container {
+        width: 94%;
+    }
+    
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .header-container__logo {
+        font-size: 1.75rem;
+    }
+
+    .task-container__button {
+        padding: 1rem;
+    }
+
+    .task-container__button > span {
+        display: none;
+    }
+
 }
